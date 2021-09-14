@@ -1,0 +1,13 @@
+- `upload.sh`: upload app profile
+- `upload-cached.sh`: upload app profile but with cached feature. useful when perform stateless crawling
+- `download.sh`: download app profile
+- `firefox-wrapper.py`: general firefox wrapper binary on Linux
+- `windows-firefox-wrapper.py`: general firefox wrapper binary on Windows
+- `init-mobile-phone.py`: helper script to set up mobile phones
+- `launch_selenium_firefox45_python2.py`: OpenWPM-mobile with Firefox 45 launcher
+- `launch_selenium_firefox65.py`: OpenWPM-mobile with Firefox 65 launcher
+- `launch_windows_selenium_chrome.py`: Selenium Chrome launcher on Windows 10
+- `launch_windows_selenium_firefox.py`: Selenium Firefox launcher on Windows 10
+- `prune_profile.py`: helper script to prune large profiles, both app profiles or desktop browser profiles)
+- `screencap.sh`: take a screenshop of a given mobile uid
+- `webdriver.py`: A remote webdriver server on Windows 10
