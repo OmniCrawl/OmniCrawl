@@ -112,6 +112,13 @@ public class DesktopBrowser extends AbstractBrowser {
                         driver = buildChromeDriver(chromeCaps72, profileDirectoryPath, resetProfileBeforeVisiting);
                         logger.info("Desktop Chrome 72 driver created!");
                         break;
+                    case "chrome88":
+                        DesiredCapabilities chromeCaps88 = standardChromeCaps(proxyAddr, profileDirectoryPath,
+                            resetProfileBeforeVisiting, Config.PATH_TO_CHROME88_BINARY, this.tmpProfilePath);
+                        logger.info("Desktop Chrome 88 is creating...");
+                        driver = buildChromeDriver(chromeCaps88, profileDirectoryPath, resetProfileBeforeVisiting);
+                        logger.info("Desktop Chrome 88 driver created!");
+                        break;
                     case "firefox62":
                         FirefoxOptions options62 = standardFirefoxOptions(proxyAddr, profileDirectoryPath,
                             this.tmpProfilePath, Config.PATH_TO_FIREFOX62_WRAPPER);
@@ -135,6 +142,14 @@ public class DesktopBrowser extends AbstractBrowser {
                         driver = buildFirefoxDriver(options65ghostery, profileDirectoryPath, resetProfileBeforeVisiting,
                             this.tmpProfilePath);
                         logger.info("Desktop Firefox 65 with Ghostery driver created!");
+                        break;
+                    case "firefox86":
+                        FirefoxOptions options86 = standardFirefoxOptions(proxyAddr, profileDirectoryPath,
+                            this.tmpProfilePath, Config.PATH_TO_FIREFOX86_WRAPPER);
+                        logger.info("Desktop Firefox 86 is creating...");
+                        driver = buildFirefoxDriver(options86, profileDirectoryPath, resetProfileBeforeVisiting,
+                            this.tmpProfilePath);
+                        logger.info("Desktop Firefox 86 driver created!");
                         break;
                     case "opera":
                         // TODO: DesiredCapabilities is deprecated. Use Options instead.
