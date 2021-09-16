@@ -114,25 +114,6 @@ public class MultithreadCrawler {
             @Override
             public void run() {
                 Resource.saveCheckpoint(Config.CHECKPOINT_PATH, numOfSyncUrl);
-
-                long ts = System.currentTimeMillis() / 1000L;
-                if (lastTimestamp == -1)  {
-                    logger.info("ProgressMonitoring: ignore first run");
-                } else {
-                    logger.info("ProgressMonitoring: crawling " + String.valueOf(numOfSyncUrl) + " for " + String.valueOf(ts - lastTimestamp) + " seconds");
-                    if ((ts - lastTimestamp) > 1300) {
-                       penalty++;
-                       logger.warn("ProgressMonitoring: Warning: penalty =  " + String.valueOf(penalty) + " / 3");
-                       if (penalty == 3) {
-                           logger.fatal("Abort crawling because it takes too much time to crawl websites, maybe memory issue?");
-                           System.exit(-1);
-                       }
-                    } else {
-                       penalty = 0;
-                    }
-                }
-                lastTimestamp = ts;
-
                 Monitor.dump(Config.MONITORING_STATUS_PATH);
             }
         });
@@ -177,7 +158,6 @@ public class MultithreadCrawler {
                 t.join();
             } catch (InterruptedException e) {
                 e.printStackTrace();
-//                logger.fatal("Thread is interupt while joinging");
                 System.exit(-1);
             }
         }

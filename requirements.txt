@@ -21,7 +21,6 @@ kaitaistruct==0.8
 kiwisolver==1.0.1
 ldap3==2.5.1
 MarkupSafe==1.1.0
-matplotlib==3.0.2
 mitmproxy==4.0.4
 numpy==1.15.1
 pandas==0.23.4
@@ -39,7 +38,7 @@ python-magic==0.4.15
 pytz==2018.5
 requests==2.20.0
 requests-file==1.4.3
-ruamel.yaml==0.15.71
+ruamel.yaml
 scipy==1.1.0
 seaborn==0.9.0
 selenium==3.14.0
@@ -52,3 +51,4 @@ urllib3==1.23
 urwid==2.0.1
 Werkzeug==0.14.1
 wsproto==0.11.0
+matplotlib

@@ -10,24 +10,26 @@ public class Config {
     public final static String MOBILE_TIMEOUT_SCREENCAP_DIR = "log";
 
     // In most cases the two are the same.
-    public final static String BROWSER_SYNC_HOST = "TODO";
-    public final static String MAIN_CRAWLER_LISTEN_HOST = "TODO";
+    public final static String BROWSER_SYNC_HOST = "127.0.0.1";
+    public final static String MAIN_CRAWLER_LISTEN_HOST = "127.0.0.1";
 
-    public final static String PATH_TO_CHROME69_BINARY = "TODO";
-    public final static String PATH_TO_CHROME72_BINARY = "TODO";
-    public final static String PATH_TO_CHROME_DRIVER = "/path/to/chromedriver/bin" + "/chromedriver";
+    public final static String PATH_TO_CHROME69_BINARY = "path/to/chrome";
+    public final static String PATH_TO_CHROME72_BINARY = "path/to/chrome";
+    public final static String PATH_TO_CHROME88_BINARY = "path/to/chrome";
+    public final static String PATH_TO_CHROME_DRIVER = "path/to/chromedriver";
 
     public final static String PATH_TO_OPERA_BINARY = "";
     public final static String PATH_TO_OPERA_DRIVER = "";
 
-    // The firefox binary should be specifed in the wrapper script.
+    // The firefox binary should be specified in the wrapper script.
     public final static String PATH_TO_FIREFOX62_WRAPPER = "/path/to/firefox62.py";
     public final static String PATH_TO_FIREFOX65_WRAPPER = "/path/to/firefox65.py";
-    public final static String PATH_TO_FIREFOX_DRIVER = "webdrivers/geckodriver";
-    public final static String PATH_TO_OPENWPM_MOBILE_FIREFOX45 = "browsers/launch_selenium_firefox45_python2.py";
-    public final static String PATH_TO_OPENWPM_MOBILE_FIREFOX65 = "browsers/launch_selenium_firefox65.py";
-    public final static String PATH_TO_OPENWPM_MOBILE_FIREFOX86 = "browsers/launch_selenium_firefox86.py";
-    //public final static String PATH_TO_CRX = "resources/Overrider.crx";
+    public final static String PATH_TO_FIREFOX86_WRAPPER = "/path/to/firefox65.py";
+    public final static String PATH_TO_FIREFOX_DRIVER = "path/to/geckodriver";
+    // These files can be found in scripts/ but must be transfered to the browser's directory.
+    public final static String PATH_TO_OPENWPM_MOBILE_FIREFOX45 = "path/to/launch_selenium_firefox45_python2.py";
+    public final static String PATH_TO_OPENWPM_MOBILE_FIREFOX65 = "path/to/launch_selenium_firefox65.py";
+    public final static String PATH_TO_OPENWPM_MOBILE_FIREFOX86 = "path/to/launch_selenium_firefox86.py";
 
     public final static int DESKTOP_WINDOW_WIDTH = 1600;
     public final static int DESKTOP_WINDOW_HEIGHT = 900;
@@ -47,7 +49,7 @@ public class Config {
     public final static String OWM65_SL_39001 = "profiles/openwpm-mobile-65";
     public final static String OWM86_SL_39001 = "profiles/openwpm-mobile-86";
 
-    // remote desktop
+    // Remote (Windows) desktop
     public final static String REMOTE_TMP_DIR = "D:\\profiles\\tmp2";
     public final static String R_CH72_SL = "D:\\profiles\\chrome72";
     public final static String R_CH72B_SL = "D:\\profiles\\chrome72b";
@@ -88,7 +90,7 @@ public class Config {
     public final static String REMOTE_BRAVE_PATH = "D:\\bin\\brave88\\brave.exe";
     public final static String REMOTE_TOR_PATH = "D:\\bin\\tor10\\tor.exe"; 
 
-    // mobile
+    // Mobile
     public final static String M_CH_SL = "profiles/chrome88.tar.bz2";
     public final static String M_CH_SF = "profiles/com.android.chrome.sf.tar.bz2";
     public final static String M_FF_SL = "profiles/firefox86.tar.bz2";
