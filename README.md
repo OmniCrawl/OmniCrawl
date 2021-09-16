@@ -2,23 +2,23 @@
 
 This is the repository for the web measurement infrastructure OmniCrawl, from the paper "OmniCrawl: Comprehensive Measurement of Web Tracking With Real Desktop and Mobile Browsers", to appear at [PETS'22](https://petsymposium.org/index.php).
 
-OmniCrawl is a web measurement tool that allows for recording of requests and JavaScript browser API acccesses on multiple platforms: Linux, Windows, and Android. We have built in support for several browsers as well: mobile (Android)and desktop Chrome, Firefox, Brave, and Tor, as well as mobile Firefox Focus, DuckDuckGo, and Ghostery.
+OmniCrawl is a web measurement tool that allows for recording of web requests and JavaScript browser API acccesses on multiple platforms: Linux, Windows, and Android. We have built in support for several browsers as well: mobile (Android)and desktop Chrome, Firefox, Brave, and Tor, as well as mobile Firefox Focus, DuckDuckGo, and Ghostery.
 
-This repository will allow one to set up the infrastructure itself but does not provide any browsers or browser profiles (expect for the [demonstration VM](documentation/Artifact.md)).
+This repository will allow one to set up the infrastructure itself but does not provide any browsers or browser profiles (except for the [demonstration VM](documentation/Artifact.md)).
 
-Below we discuss general installation and how to run a crawl using the infrastructure. Other other documentation, including setup notes for the [browsers](documentation/Browsers.md), [browser profiles](documentation/Profiles.md), and [proxy](documentation/Proxy.md) can be found in the `documentation` folder.
+Below we discuss general installation and how to run a crawl using the infrastructure. Other documentation, including setup notes for the [browsers](documentation/Browsers.md), [browser profiles](documentation/Profiles.md), and [proxy](documentation/Proxy.md) can be found in the `documentation` folder.
 
 ## System Overview
 
 To make full use of OmniCrawl, multiple non-virtual machines are required. The default configuration we use runs 42 browsers across 22 machines across two geographic locations (11 machines per location). The breakdown of machines _for a single location_ is as follows:
-1. One Linux machines to host OpenWPM-Mobile browsers and run the crawler's controller.
-2. One Linux machines to run the proxy
+1. One Linux machine to host OpenWPM-Mobile browsers and run the crawler's controller.
+2. One Linux machine to run the proxy
 3. One Windows machine to host the desktop browsers (Chrome, Firefox, Brave, and Tor).
-4. Nine Android phones that each host a separate browser (Chrome, Firefox, Brave, Tor, Firefox Focus, Ghostery, and DuckDuckGo).
+4. Nine Android phones to each host a separate browser (Chrome, Firefox, Brave, Tor, Firefox Focus, Ghostery, and DuckDuckGo).
 
 Note that 1 and 2 can be the same machine if the machine is sufficiently powerful (typically running the proxy requires an entire machine if all browsers are used, but there may exist hardware that is capable of running more).
 
-In our [demonstration VM](documentation/Artifact.md) we showcase a minimal version of the above setup that only has Chrome and Firefox running on Linux along with the proxy. Note that the ecological validity of this setup is not ideal as most users of Chrome and Firefox use Windows. The reason for this minimal setup is to be able to share a small, self-contained virtual machine.
+In our [demonstration VM](documentation/Artifact.md) we showcase a minimal version of the above setup that only has Chrome and Firefox, running on Linux, along with the proxy. Note that this setup may not be ecologically valid, since most users of Chrome and Firefox use Windows. The reason for this minimal setup is to be able to share a small, self-contained virtual machine.
 
 ## Installation
 
