@@ -61,7 +61,7 @@ public class Resource {
             throw new RuntimeException("Cannot load tranco list from " + path);
         }
         ArrayList<String> list = new ArrayList<>();
-        for (int i = 0; i < k; i++) {
+        while (s.hasNextLine()) {
             String line = s.nextLine().trim();
             if (line.startsWith("http://") || line.startsWith("https://")){
                 list.add(line);
@@ -70,7 +70,18 @@ public class Resource {
             }
         }
         s.close();
-        return list;
+        if (k > 0 && k < list.size()) {
+            return new ArrayList(list.subList(0, k));
+        } else if (k == -1) {
+            return list;
+        } else {
+            throw new RuntimeException(
+                "Requested number of sites " 
+                + Integer.toString(k) 
+                + " is invalid for list of size " 
+                + Integer.toString(list.size())
+            );
+        }
     }
 
     public static String sendHttpRequest(String urlString) {

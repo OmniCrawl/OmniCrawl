@@ -13,11 +13,26 @@ public class MultithreadCrawler {
     public static void main(String[] args) {
         System.setProperty("log4j.configurationFile","resources/log4j2.xml");
 
+        // The first argument is the number of sites to visit
+        int numSites = Integer.parseInt(args[0]);
+        // The second argument is whether to use checkpointing
+        boolean checkpoint = Boolean.valueOf(args[1]);
+
         final String appiumUrl = "http://127.0.0.1:4723/wd/hub";
         final int numOfSyncUrl = 5;
         final int hardTimeoutSec = 90 + 40; // The mobile browsers take about 10-15 secs to send stop command.
-        final List<String> allUrls = Resource.loadTrancoList(0);
-        int startIndex = Resource.loadCheckpoint(Config.CHECKPOINT_PATH);
+
+        final List<String> allUrls = Resource.loadTrancoList(numSites);
+        logger.info("Crawling " + Integer.toString(allUrls.size()) + " urls");
+
+        int startIndex = 0;
+        if (checkpoint) {
+            startIndex = Resource.loadCheckpoint(Config.CHECKPOINT_PATH);
+            logger.info("Using checkpointing; starting from index " + Integer.toString(startIndex));
+            if (startIndex >= allUrls.size()) {
+                throw new RuntimeException("Checkpoint index is greater than length of site list");
+            } 
+        }
         final List<String> urls = allUrls.subList(startIndex, allUrls.size());
 
         Monitor.loadOrCreate(Config.MONITORING_STATUS_PATH);

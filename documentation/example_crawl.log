@@ -1,0 +1,237 @@
+2021-11-02 21:16:43.069 [main] INFO  MainCrawler - Crawling 5 urls
+2021-11-02 21:16:43.072 [main] WARN  Monitor - Monitoring status file log/status.json not found. Create a new one...
+2021-11-02 21:16:43.096 [main] INFO  d_chrome88 - Running command rm -r /tmp/crawler-tmp-15329046078255018933
+2021-11-02 21:16:43.118 [main] INFO  d_chrome88 - Running command cp -r profiles/chrome88 /tmp/crawler-tmp-15329046078255018933
+2021-11-02 21:16:43.167 [main] INFO  d_chrome88 - Executing command: rm -r /tmp/crawler-tmp-15329046078255018933/Default/Cache
+2021-11-02 21:16:43.190 [main] INFO  d_chrome88 - Desktop Chrome 88 is creating...
+Starting ChromeDriver 88.0.4324.0 (c73b5a651d37a6c4d0b8e3262cc4015a5579c6c8-refs/heads/master@{#827102}) on port 14897
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Nov 02, 2021 9:16:44 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+2021-11-02 21:16:44.821 [main] INFO  d_chrome88 - Desktop Chrome 88 driver created!
+2021-11-02 21:16:44.869 [main] WARN  d_firefox86 - Note: In Firefox, specifying proxy address has no effect when using a profile
+2021-11-02 21:16:44.886 [main] WARN  d_firefox86 - Firefox will load proxy configuration from prefs.js in the profile directory
+2021-11-02 21:16:44.888 [main] INFO  d_firefox86 - Running command rm -r /tmp/crawler-tmp-7546498293512950748
+2021-11-02 21:16:44.901 [main] INFO  d_firefox86 - Running command mkdir /tmp/crawler-tmp-7546498293512950748
+2021-11-02 21:16:44.926 [main] INFO  d_firefox86 - Desktop Firefox 86 is creating...
+Nov 02, 2021 9:16:54 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+2021-11-02 21:16:54.864 [main] INFO  d_firefox86 - Desktop Firefox 86 driver created!
+2021-11-02 21:16:54.881 [Thread-2] WARN  DesktopWorker - URL progress: index 0 / 5
+2021-11-02 21:16:54.881 [Thread-1] WARN  DesktopWorker - URL progress: index 0 / 5
+2021-11-02 21:16:54.887 [Thread-2] WARN  DesktopWorker - Browser progress: index 0 / 1
+2021-11-02 21:16:54.888 [Thread-2] INFO  DesktopWorker - listening... on port 39977
+2021-11-02 21:16:54.888 [Thread-2] INFO  DesktopWorker - set socket timeout to 130000 msec
+2021-11-02 21:16:54.889 [Thread-2] INFO  DesktopWorker - Crawling http://google.com
+2021-11-02 21:16:54.890 [Thread-2] INFO  DesktopWorker - Getting url http://240.240.240.240/start?sync=true&sync_port=39977&sync_host=127.0.0.1&url=http://google.com&browser=desktop-firefox86-d_firefox86&scroll=false
+2021-11-02 21:16:54.890 [Thread-1] WARN  DesktopWorker - Browser progress: index 0 / 1
+2021-11-02 21:16:54.890 [Thread-1] INFO  DesktopWorker - listening... on port 40073
+2021-11-02 21:16:54.890 [Thread-1] INFO  DesktopWorker - set socket timeout to 130000 msec
+2021-11-02 21:16:54.891 [Thread-1] INFO  DesktopWorker - Crawling http://google.com
+2021-11-02 21:16:54.891 [Thread-1] INFO  DesktopWorker - Getting url http://240.240.240.240/start?sync=true&sync_port=40073&sync_host=127.0.0.1&url=http://google.com&browser=desktop-chrome88-d_chrome88&scroll=false
+2021-11-02 21:16:55.205 [Thread-1] INFO  DesktopWorker - Redirection done. Start crawling http://google.com
+2021-11-02 21:16:55.206 [Thread-1] INFO  DesktopWorker - awaiting mtim......
+2021-11-02 21:16:55.209 [Thread-1] INFO  DesktopWorker - wait start TS = 1635902215209
+2021-11-02 21:16:55.210 [Thread-1] INFO  DesktopWorker - wait for mitmproxy to connect...
+2021-11-02 21:16:55.255 [Thread-2] INFO  DesktopWorker - Redirection done. Start crawling http://google.com
+2021-11-02 21:16:55.256 [Thread-2] INFO  DesktopWorker - awaiting mtim......
+2021-11-02 21:16:55.256 [Thread-2] INFO  DesktopWorker - wait start TS = 1635902215256
+2021-11-02 21:16:55.260 [Thread-2] INFO  DesktopWorker - wait for mitmproxy to connect...
+2021-11-02 21:18:30.157 [Thread-1] INFO  DesktopWorker - accept!
+2021-11-02 21:18:30.158 [Thread-1] INFO  DesktopWorker - wait end TS = 1635902310158
+2021-11-02 21:18:30.161 [Thread-1] INFO  DesktopWorker - ACK
+2021-11-02 21:18:30.252 [Thread-2] INFO  DesktopWorker - accept!
+2021-11-02 21:18:30.254 [Thread-2] INFO  DesktopWorker - wait end TS = 1635902310254
+2021-11-02 21:18:30.255 [Thread-2] INFO  DesktopWorker - ACK
+2021-11-02 21:18:30.623 [Thread-1] WARN  DesktopWorker - URL progress: index 1 / 5
+2021-11-02 21:18:30.625 [Thread-1] WARN  DesktopWorker - Browser progress: index 0 / 1
+2021-11-02 21:18:30.625 [Thread-1] INFO  d_chrome88 - Running command rm -r /tmp/crawler-tmp-15329046078255018933
+2021-11-02 21:18:30.654 [Thread-1] INFO  d_chrome88 - Running command cp -r profiles/chrome88 /tmp/crawler-tmp-15329046078255018933
+2021-11-02 21:18:30.771 [Thread-1] INFO  d_chrome88 - Executing command: rm -r /tmp/crawler-tmp-15329046078255018933/Default/Cache
+2021-11-02 21:18:30.774 [Thread-1] INFO  d_chrome88 - Desktop Chrome 88 is creating...
+Starting ChromeDriver 88.0.4324.0 (c73b5a651d37a6c4d0b8e3262cc4015a5579c6c8-refs/heads/master@{#827102}) on port 22027
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+2021-11-02 21:18:31.239 [Thread-2] INFO  d_firefox86 - Executing command: rm -r /tmp/crawler-tmp-7546498293512950748
+2021-11-02 21:18:31.254 [Thread-2] INFO  d_firefox86 - Executing command: mkdir /tmp/crawler-tmp-7546498293512950748
+2021-11-02 21:18:31.259 [Thread-2] WARN  DesktopWorker - URL progress: index 1 / 5
+2021-11-02 21:18:31.261 [Thread-2] WARN  DesktopWorker - Browser progress: index 0 / 1
+2021-11-02 21:18:31.263 [Thread-2] WARN  d_firefox86 - Note: In Firefox, specifying proxy address has no effect when using a profile
+2021-11-02 21:18:31.263 [Thread-2] WARN  d_firefox86 - Firefox will load proxy configuration from prefs.js in the profile directory
+2021-11-02 21:18:31.264 [Thread-2] INFO  d_firefox86 - Running command rm -r /tmp/crawler-tmp-7546498293512950748
+2021-11-02 21:18:31.275 [Thread-2] INFO  d_firefox86 - Running command mkdir /tmp/crawler-tmp-7546498293512950748
+2021-11-02 21:18:31.283 [Thread-2] INFO  d_firefox86 - Desktop Firefox 86 is creating...
+Nov 02, 2021 9:18:32 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+2021-11-02 21:18:32.218 [Thread-1] INFO  d_chrome88 - Desktop Chrome 88 driver created!
+2021-11-02 21:18:32.243 [Thread-1] INFO  DesktopWorker - listening... on port 33283
+2021-11-02 21:18:32.243 [Thread-1] INFO  DesktopWorker - set socket timeout to 130000 msec
+2021-11-02 21:18:32.243 [Thread-1] INFO  DesktopWorker - Crawling http://youtube.com
+2021-11-02 21:18:32.243 [Thread-1] INFO  DesktopWorker - Getting url http://240.240.240.240/start?sync=true&sync_port=33283&sync_host=127.0.0.1&url=http://youtube.com&browser=desktop-chrome88-d_chrome88&scroll=false
+2021-11-02 21:18:32.670 [Thread-1] INFO  DesktopWorker - Redirection done. Start crawling http://youtube.com
+2021-11-02 21:18:32.670 [Thread-1] INFO  DesktopWorker - awaiting mtim......
+2021-11-02 21:18:32.670 [Thread-1] INFO  DesktopWorker - wait start TS = 1635902312670
+2021-11-02 21:18:32.670 [Thread-1] INFO  DesktopWorker - wait for mitmproxy to connect...
+Nov 02, 2021 9:18:45 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+2021-11-02 21:18:46.019 [Thread-2] INFO  d_firefox86 - Desktop Firefox 86 driver created!
+2021-11-02 21:18:46.122 [Thread-2] INFO  DesktopWorker - listening... on port 33871
+2021-11-02 21:18:46.122 [Thread-2] INFO  DesktopWorker - set socket timeout to 130000 msec
+2021-11-02 21:18:46.123 [Thread-2] INFO  DesktopWorker - Crawling http://youtube.com
+2021-11-02 21:18:46.123 [Thread-2] INFO  DesktopWorker - Getting url http://240.240.240.240/start?sync=true&sync_port=33871&sync_host=127.0.0.1&url=http://youtube.com&browser=desktop-firefox86-d_firefox86&scroll=false
+2021-11-02 21:18:46.693 [Thread-2] INFO  DesktopWorker - Redirection done. Start crawling http://youtube.com
+2021-11-02 21:18:46.698 [Thread-2] INFO  DesktopWorker - awaiting mtim......
+2021-11-02 21:18:46.698 [Thread-2] INFO  DesktopWorker - wait start TS = 1635902326698
+2021-11-02 21:18:46.698 [Thread-2] INFO  DesktopWorker - wait for mitmproxy to connect...
+2021-11-02 21:20:07.609 [Thread-1] INFO  DesktopWorker - accept!
+2021-11-02 21:20:07.609 [Thread-1] INFO  DesktopWorker - wait end TS = 1635902407609
+2021-11-02 21:20:07.610 [Thread-1] INFO  DesktopWorker - ACK
+2021-11-02 21:20:07.870 [Thread-1] WARN  DesktopWorker - URL progress: index 2 / 5
+2021-11-02 21:20:07.871 [Thread-1] WARN  DesktopWorker - Browser progress: index 0 / 1
+2021-11-02 21:20:07.872 [Thread-1] INFO  d_chrome88 - Running command rm -r /tmp/crawler-tmp-15329046078255018933
+2021-11-02 21:20:07.902 [Thread-1] INFO  d_chrome88 - Running command cp -r profiles/chrome88 /tmp/crawler-tmp-15329046078255018933
+2021-11-02 21:20:07.946 [Thread-1] INFO  d_chrome88 - Executing command: rm -r /tmp/crawler-tmp-15329046078255018933/Default/Cache
+2021-11-02 21:20:07.949 [Thread-1] INFO  d_chrome88 - Desktop Chrome 88 is creating...
+Starting ChromeDriver 88.0.4324.0 (c73b5a651d37a6c4d0b8e3262cc4015a5579c6c8-refs/heads/master@{#827102}) on port 12346
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Nov 02, 2021 9:20:09 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+2021-11-02 21:20:09.061 [Thread-1] INFO  d_chrome88 - Desktop Chrome 88 driver created!
+2021-11-02 21:20:09.076 [Thread-1] INFO  DesktopWorker - listening... on port 43419
+2021-11-02 21:20:09.076 [Thread-1] INFO  DesktopWorker - set socket timeout to 130000 msec
+2021-11-02 21:20:09.077 [Thread-1] INFO  DesktopWorker - Crawling http://facebook.com
+2021-11-02 21:20:09.077 [Thread-1] INFO  DesktopWorker - Getting url http://240.240.240.240/start?sync=true&sync_port=43419&sync_host=127.0.0.1&url=http://facebook.com&browser=desktop-chrome88-d_chrome88&scroll=false
+2021-11-02 21:20:09.441 [Thread-1] INFO  DesktopWorker - Redirection done. Start crawling http://facebook.com
+2021-11-02 21:20:09.441 [Thread-1] INFO  DesktopWorker - awaiting mtim......
+2021-11-02 21:20:09.442 [Thread-1] INFO  DesktopWorker - wait start TS = 1635902409442
+2021-11-02 21:20:09.442 [Thread-1] INFO  DesktopWorker - wait for mitmproxy to connect...
+2021-11-02 21:20:21.489 [Thread-2] INFO  DesktopWorker - accept!
+2021-11-02 21:20:21.489 [Thread-2] INFO  DesktopWorker - wait end TS = 1635902421489
+2021-11-02 21:20:21.490 [Thread-2] INFO  DesktopWorker - ACK
+2021-11-02 21:20:22.183 [Thread-2] INFO  d_firefox86 - Executing command: rm -r /tmp/crawler-tmp-7546498293512950748
+2021-11-02 21:20:22.192 [Thread-2] INFO  d_firefox86 - Executing command: mkdir /tmp/crawler-tmp-7546498293512950748
+2021-11-02 21:20:22.195 [Thread-2] WARN  DesktopWorker - URL progress: index 2 / 5
+2021-11-02 21:20:22.195 [Thread-2] WARN  DesktopWorker - Browser progress: index 0 / 1
+2021-11-02 21:20:22.196 [Thread-2] WARN  d_firefox86 - Note: In Firefox, specifying proxy address has no effect when using a profile
+2021-11-02 21:20:22.196 [Thread-2] WARN  d_firefox86 - Firefox will load proxy configuration from prefs.js in the profile directory
+2021-11-02 21:20:22.196 [Thread-2] INFO  d_firefox86 - Running command rm -r /tmp/crawler-tmp-7546498293512950748
+2021-11-02 21:20:22.197 [Thread-2] INFO  d_firefox86 - Running command mkdir /tmp/crawler-tmp-7546498293512950748
+2021-11-02 21:20:22.200 [Thread-2] INFO  d_firefox86 - Desktop Firefox 86 is creating...
+Nov 02, 2021 9:20:30 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+2021-11-02 21:20:30.407 [Thread-2] INFO  d_firefox86 - Desktop Firefox 86 driver created!
+2021-11-02 21:20:30.464 [Thread-2] INFO  DesktopWorker - listening... on port 45537
+2021-11-02 21:20:30.465 [Thread-2] INFO  DesktopWorker - set socket timeout to 130000 msec
+2021-11-02 21:20:30.465 [Thread-2] INFO  DesktopWorker - Crawling http://facebook.com
+2021-11-02 21:20:30.465 [Thread-2] INFO  DesktopWorker - Getting url http://240.240.240.240/start?sync=true&sync_port=45537&sync_host=127.0.0.1&url=http://facebook.com&browser=desktop-firefox86-d_firefox86&scroll=false
+2021-11-02 21:20:30.634 [Thread-2] INFO  DesktopWorker - Redirection done. Start crawling http://facebook.com
+2021-11-02 21:20:30.634 [Thread-2] INFO  DesktopWorker - awaiting mtim......
+2021-11-02 21:20:30.634 [Thread-2] INFO  DesktopWorker - wait start TS = 1635902430634
+2021-11-02 21:20:30.636 [Thread-2] INFO  DesktopWorker - wait for mitmproxy to connect...
+2021-11-02 21:21:44.382 [Thread-1] INFO  DesktopWorker - accept!
+2021-11-02 21:21:44.383 [Thread-1] INFO  DesktopWorker - wait end TS = 1635902504383
+2021-11-02 21:21:44.383 [Thread-1] INFO  DesktopWorker - ACK
+2021-11-02 21:21:44.610 [Thread-1] WARN  DesktopWorker - URL progress: index 3 / 5
+2021-11-02 21:21:44.610 [Thread-1] WARN  DesktopWorker - Browser progress: index 0 / 1
+2021-11-02 21:21:44.611 [Thread-1] INFO  d_chrome88 - Running command rm -r /tmp/crawler-tmp-15329046078255018933
+2021-11-02 21:21:44.645 [Thread-1] INFO  d_chrome88 - Running command cp -r profiles/chrome88 /tmp/crawler-tmp-15329046078255018933
+2021-11-02 21:21:44.701 [Thread-1] INFO  d_chrome88 - Executing command: rm -r /tmp/crawler-tmp-15329046078255018933/Default/Cache
+2021-11-02 21:21:44.710 [Thread-1] INFO  d_chrome88 - Desktop Chrome 88 is creating...
+Starting ChromeDriver 88.0.4324.0 (c73b5a651d37a6c4d0b8e3262cc4015a5579c6c8-refs/heads/master@{#827102}) on port 28221
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Nov 02, 2021 9:21:45 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+2021-11-02 21:21:45.924 [Thread-1] INFO  d_chrome88 - Desktop Chrome 88 driver created!
+2021-11-02 21:21:45.958 [Thread-1] INFO  DesktopWorker - listening... on port 37715
+2021-11-02 21:21:45.961 [Thread-1] INFO  DesktopWorker - set socket timeout to 130000 msec
+2021-11-02 21:21:45.963 [Thread-1] INFO  DesktopWorker - Crawling http://microsoft.com
+2021-11-02 21:21:45.963 [Thread-1] INFO  DesktopWorker - Getting url http://240.240.240.240/start?sync=true&sync_port=37715&sync_host=127.0.0.1&url=http://microsoft.com&browser=desktop-chrome88-d_chrome88&scroll=false
+2021-11-02 21:21:46.219 [Thread-1] INFO  DesktopWorker - Redirection done. Start crawling http://microsoft.com
+2021-11-02 21:21:46.219 [Thread-1] INFO  DesktopWorker - awaiting mtim......
+2021-11-02 21:21:46.221 [Thread-1] INFO  DesktopWorker - wait start TS = 1635902506221
+2021-11-02 21:21:46.221 [Thread-1] INFO  DesktopWorker - wait for mitmproxy to connect...
+2021-11-02 21:22:05.600 [Thread-2] INFO  DesktopWorker - accept!
+2021-11-02 21:22:05.600 [Thread-2] INFO  DesktopWorker - wait end TS = 1635902525600
+2021-11-02 21:22:05.601 [Thread-2] INFO  DesktopWorker - ACK
+2021-11-02 21:22:06.265 [Thread-2] INFO  d_firefox86 - Executing command: rm -r /tmp/crawler-tmp-7546498293512950748
+2021-11-02 21:22:06.273 [Thread-2] INFO  d_firefox86 - Executing command: mkdir /tmp/crawler-tmp-7546498293512950748
+2021-11-02 21:22:06.274 [Thread-2] WARN  DesktopWorker - URL progress: index 3 / 5
+2021-11-02 21:22:06.274 [Thread-2] WARN  DesktopWorker - Browser progress: index 0 / 1
+2021-11-02 21:22:06.274 [Thread-2] WARN  d_firefox86 - Note: In Firefox, specifying proxy address has no effect when using a profile
+2021-11-02 21:22:06.275 [Thread-2] WARN  d_firefox86 - Firefox will load proxy configuration from prefs.js in the profile directory
+2021-11-02 21:22:06.275 [Thread-2] INFO  d_firefox86 - Running command rm -r /tmp/crawler-tmp-7546498293512950748
+2021-11-02 21:22:06.276 [Thread-2] INFO  d_firefox86 - Running command mkdir /tmp/crawler-tmp-7546498293512950748
+2021-11-02 21:22:06.277 [Thread-2] INFO  d_firefox86 - Desktop Firefox 86 is creating...
+Nov 02, 2021 9:22:15 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+2021-11-02 21:22:15.459 [Thread-2] INFO  d_firefox86 - Desktop Firefox 86 driver created!
+2021-11-02 21:22:15.509 [Thread-2] INFO  DesktopWorker - listening... on port 43145
+2021-11-02 21:22:15.510 [Thread-2] INFO  DesktopWorker - set socket timeout to 130000 msec
+2021-11-02 21:22:15.510 [Thread-2] INFO  DesktopWorker - Crawling http://microsoft.com
+2021-11-02 21:22:15.510 [Thread-2] INFO  DesktopWorker - Getting url http://240.240.240.240/start?sync=true&sync_port=43145&sync_host=127.0.0.1&url=http://microsoft.com&browser=desktop-firefox86-d_firefox86&scroll=false
+2021-11-02 21:22:15.684 [Thread-2] INFO  DesktopWorker - Redirection done. Start crawling http://microsoft.com
+2021-11-02 21:22:15.684 [Thread-2] INFO  DesktopWorker - awaiting mtim......
+2021-11-02 21:22:15.684 [Thread-2] INFO  DesktopWorker - wait start TS = 1635902535684
+2021-11-02 21:22:15.684 [Thread-2] INFO  DesktopWorker - wait for mitmproxy to connect...
+2021-11-02 21:23:22.236 [Thread-1] INFO  DesktopWorker - accept!
+2021-11-02 21:23:22.236 [Thread-1] INFO  DesktopWorker - wait end TS = 1635902602236
+2021-11-02 21:23:22.237 [Thread-1] INFO  DesktopWorker - ACK
+2021-11-02 21:23:22.788 [Thread-1] WARN  DesktopWorker - URL progress: index 4 / 5
+2021-11-02 21:23:22.788 [Thread-1] WARN  DesktopWorker - Browser progress: index 0 / 1
+2021-11-02 21:23:22.789 [Thread-1] INFO  d_chrome88 - Running command rm -r /tmp/crawler-tmp-15329046078255018933
+2021-11-02 21:23:22.839 [Thread-1] INFO  d_chrome88 - Running command cp -r profiles/chrome88 /tmp/crawler-tmp-15329046078255018933
+2021-11-02 21:23:22.914 [Thread-1] INFO  d_chrome88 - Executing command: rm -r /tmp/crawler-tmp-15329046078255018933/Default/Cache
+2021-11-02 21:23:22.916 [Thread-1] INFO  d_chrome88 - Desktop Chrome 88 is creating...
+Starting ChromeDriver 88.0.4324.0 (c73b5a651d37a6c4d0b8e3262cc4015a5579c6c8-refs/heads/master@{#827102}) on port 27085
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Nov 02, 2021 9:23:24 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+2021-11-02 21:23:24.437 [Thread-1] INFO  d_chrome88 - Desktop Chrome 88 driver created!
+2021-11-02 21:23:24.445 [Thread-1] INFO  DesktopWorker - listening... on port 34071
+2021-11-02 21:23:24.446 [Thread-1] INFO  DesktopWorker - set socket timeout to 130000 msec
+2021-11-02 21:23:24.446 [Thread-1] INFO  DesktopWorker - Crawling http://twitter.com
+2021-11-02 21:23:24.447 [Thread-1] INFO  DesktopWorker - Getting url http://240.240.240.240/start?sync=true&sync_port=34071&sync_host=127.0.0.1&url=http://twitter.com&browser=desktop-chrome88-d_chrome88&scroll=false
+2021-11-02 21:23:24.697 [Thread-1] INFO  DesktopWorker - Redirection done. Start crawling http://twitter.com
+2021-11-02 21:23:24.697 [Thread-1] INFO  DesktopWorker - awaiting mtim......
+2021-11-02 21:23:24.697 [Thread-1] INFO  DesktopWorker - wait start TS = 1635902604697
+2021-11-02 21:23:24.698 [Thread-1] INFO  DesktopWorker - wait for mitmproxy to connect...
+2021-11-02 21:23:51.320 [Thread-2] INFO  DesktopWorker - accept!
+2021-11-02 21:23:51.320 [Thread-2] INFO  DesktopWorker - wait end TS = 1635902631320
+2021-11-02 21:23:51.320 [Thread-2] INFO  DesktopWorker - ACK
+2021-11-02 21:23:52.161 [Thread-2] INFO  d_firefox86 - Executing command: rm -r /tmp/crawler-tmp-7546498293512950748
+2021-11-02 21:23:52.172 [Thread-2] INFO  d_firefox86 - Executing command: mkdir /tmp/crawler-tmp-7546498293512950748
+2021-11-02 21:23:52.174 [Thread-2] WARN  DesktopWorker - URL progress: index 4 / 5
+2021-11-02 21:23:52.175 [Thread-2] WARN  DesktopWorker - Browser progress: index 0 / 1
+2021-11-02 21:23:52.175 [Thread-2] WARN  d_firefox86 - Note: In Firefox, specifying proxy address has no effect when using a profile
+2021-11-02 21:23:52.176 [Thread-2] WARN  d_firefox86 - Firefox will load proxy configuration from prefs.js in the profile directory
+2021-11-02 21:23:52.176 [Thread-2] INFO  d_firefox86 - Running command rm -r /tmp/crawler-tmp-7546498293512950748
+2021-11-02 21:23:52.178 [Thread-2] INFO  d_firefox86 - Running command mkdir /tmp/crawler-tmp-7546498293512950748
+2021-11-02 21:23:52.181 [Thread-2] INFO  d_firefox86 - Desktop Firefox 86 is creating...
+Nov 02, 2021 9:24:02 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+2021-11-02 21:24:02.981 [Thread-2] INFO  d_firefox86 - Desktop Firefox 86 driver created!
+2021-11-02 21:24:03.021 [Thread-2] INFO  DesktopWorker - listening... on port 40815
+2021-11-02 21:24:03.021 [Thread-2] INFO  DesktopWorker - set socket timeout to 130000 msec
+2021-11-02 21:24:03.021 [Thread-2] INFO  DesktopWorker - Crawling http://twitter.com
+2021-11-02 21:24:03.021 [Thread-2] INFO  DesktopWorker - Getting url http://240.240.240.240/start?sync=true&sync_port=40815&sync_host=127.0.0.1&url=http://twitter.com&browser=desktop-firefox86-d_firefox86&scroll=false
+2021-11-02 21:24:03.482 [Thread-2] INFO  DesktopWorker - Redirection done. Start crawling http://twitter.com
+2021-11-02 21:24:03.484 [Thread-2] INFO  DesktopWorker - awaiting mtim......
+2021-11-02 21:24:03.484 [Thread-2] INFO  DesktopWorker - wait start TS = 1635902643484
+2021-11-02 21:24:03.484 [Thread-2] INFO  DesktopWorker - wait for mitmproxy to connect...
+2021-11-02 21:24:59.801 [Thread-1] INFO  DesktopWorker - accept!
+2021-11-02 21:24:59.801 [Thread-1] INFO  DesktopWorker - wait end TS = 1635902699801
+2021-11-02 21:24:59.801 [Thread-1] INFO  DesktopWorker - ACK
+2021-11-02 21:25:38.253 [Thread-2] INFO  DesktopWorker - accept!
+2021-11-02 21:25:38.253 [Thread-2] INFO  DesktopWorker - wait end TS = 1635902738253
+2021-11-02 21:25:38.253 [Thread-2] INFO  DesktopWorker - ACK
+2021-11-02 21:25:39.000 [Thread-2] INFO  d_firefox86 - Executing command: rm -r /tmp/crawler-tmp-7546498293512950748
+2021-11-02 21:25:39.042 [Thread-2] INFO  d_firefox86 - Executing command: mkdir /tmp/crawler-tmp-7546498293512950748
