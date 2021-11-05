@@ -3,7 +3,7 @@
 ## Overview
 To facilitate reproduction of this infrastructure for testing purposes, we have provided a VirtualBox virtual machine with OmniCrawl pre-loaded and ready to run over a set of websites.
 
-The virtual machine can be found [here](https://cmu.box.com/s/whjsa3dsl08ahnb6luu63t331993mssj) in Open Virtualization Format (OVF). Please note that it is fairly large at around 11 GB.
+The virtual machine can be found [here](https://cmu.box.com/s/56lckmrh14v38pfb3ehueeln801f2g04) in Open Virtualization Format (OVF). Please note that it is fairly large at around 11 GB.
 
 ### A note on validity
 This virtual machine runs just a subset of the desktop browsers from our crawl. It does not replicate the entirety of the setup (described in the [readme](../README.md)), which requires 22 physical machines, including 18 Android phones. Additionally, to simplify setup, the crawler, proxy, and desktop browsers are all run on a single Linux host (the VM). In our crawl, we run all of these components on different machines, and the desktop browsers in particular are run on Windows to ensure ecological validity. Thus, this VM serves to simply showcase the underlying crawling infrastructure.
@@ -13,7 +13,7 @@ Requirements: [VirtualBox](https://www.virtualbox.org) or equivalent virtualizat
 Under the _default configuration_ the host machine running the VM must have at least a dual-core CPU, 8 GB of RAM, and around 15 GB of disk space (ideally using an SSD). The configuration used for testing this VM was a Core i7-9750H processor with 32GB of RAM and a SSD with sufficient disk space and ~2GB/s read and write speeds.
 
 Setup steps:
-1. Download the virtual machine image from [here](https://cmu.box.com/s/whjsa3dsl08ahnb6luu63t331993mssj). The SHA256 checksum for this file is `259FFF127ED03060AF67C6A26110E8E58F48DE912B54EDBD3EC5A728545B5A93`.
+1. Download the virtual machine image from [here](https://cmu.box.com/s/56lckmrh14v38pfb3ehueeln801f2g04). The SHA256 checksum for this file is `763659C3E5C60200DB2052A8AB3DB1B20482E333E30BE59DF36FD14ADC1C9500`.
 2. Import the image into into VirtualBox. (Please see this [documentation](https://docs.oracle.com/cd/E26217_01/E26796/html/qs-import-vm.html) for instructions).
 3. Start the VM (named OmniCrawl). It should login automatically, but if it does not both the username and the password are `omnicrawl`.
 4. Configure the crawler according to your available time and resources (see below) if desired. If not, the pre-loaded default configuration can be used without modifications.
