@@ -3,7 +3,7 @@
 ## Overview
 To facilitate reproduction of this infrastructure for testing purposes, we have provided a VirtualBox virtual machine with OmniCrawl pre-loaded and ready to run over a set of websites.
 
-The virtual machine can be found [here](https://cmu.box.com/s/56lckmrh14v38pfb3ehueeln801f2g04) in Open Virtualization Format (OVF). Please note that it is fairly large at around 11 GB.
+The virtual machine can be found [here](https://cmu.box.com/s/g4uo4d2xpvn4qpuzbgkv9gqkubbl15id)<sup>1</sup> in Open Virtualization Format (OVF). Please note that it is fairly large at around 11 GB.
 
 ### A note on validity
 This virtual machine runs just a subset of the desktop browsers from our crawl. It does not replicate the entirety of the setup (described in the [readme](../README.md)), which requires 22 physical machines, including 18 Android phones. Additionally, to simplify setup, the crawler, proxy, and desktop browsers are all run on a single Linux host (the VM). In our crawl, we run all of these components on different machines, and the desktop browsers in particular are run on Windows to ensure ecological validity. Thus, this VM serves to simply showcase the underlying crawling infrastructure.
@@ -13,7 +13,7 @@ Requirements: [VirtualBox](https://www.virtualbox.org) or equivalent virtualizat
 Under the _default configuration_ the host machine running the VM must have at least a dual-core CPU, 8 GB of RAM, and around 15 GB of disk space (ideally using an SSD). The configuration used for testing this VM was a Core i7-9750H processor with 32GB of RAM and a SSD with sufficient disk space and ~2GB/s read and write speeds.
 
 Setup steps:
-1. Download the virtual machine image from [here](https://cmu.box.com/s/56lckmrh14v38pfb3ehueeln801f2g04). The SHA256 checksum for this file is `763659C3E5C60200DB2052A8AB3DB1B20482E333E30BE59DF36FD14ADC1C9500`.
+1. Download the virtual machine image from [here](https://cmu.box.com/s/g4uo4d2xpvn4qpuzbgkv9gqkubbl15id)<sup>1</sup>. The SHA256 checksum for this file is `2551f723d2d91e33c9e17af0981d63ce3a7f20981ed4b723ba89448399b03d43`.
 2. Import the image into into VirtualBox. (Please see this [documentation](https://docs.oracle.com/cd/E26217_01/E26796/html/qs-import-vm.html) for instructions).
 3. Start the VM (named OmniCrawl). It should login automatically, but if it does not both the username and the password are `omnicrawl`.
 4. Configure the crawler according to your available time and resources (see below) if desired. If not, the pre-loaded default configuration can be used without modifications.
@@ -145,3 +145,10 @@ Thus, reproduction of a result from the paper involves a few steps:
 3. Finally, we can apply the appropriate statistical analysis; for example, a two-group comparison with the Mann-Whitney U test (`scipy.stats.mannwhitneyu(group1, group2)`).
 
 Please note that if repeated significance testing is performed, multiple testing correction should be applied. We used the Holm-Bonferroni method as supported by `statsmodels.stats.multitest`.
+
+
+<hr>
+
+### Footnotes
+
+1. Please note that this artifact has been updated due to the recent RCE vulnerability disclosed for log4j ([CVE-2021-44228](https://github.com/advisories/GHSA-jfh8-c2jp-5v3q)). The [old link](https://cmu.box.com/s/56lckmrh14v38pfb3ehueeln801f2g04) is still accessible but we do not recommend its use. The SHA-256 checksum for the old link was `763659C3E5C60200DB2052A8AB3DB1B20482E333E30BE59DF36FD14ADC1C9500`.
